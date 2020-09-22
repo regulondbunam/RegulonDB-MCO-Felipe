@@ -1,4 +1,4 @@
-# [Software name]
+# [Browser para la Microbial Condition Ontology (MCO)]
 
 # Description
 
@@ -8,25 +8,19 @@
 
 [Why the software does things the way it does and why it was designed in the first place. What problems are solved by it. Links to publications and comparisons to similar software.]
 
-
-
 # System requirements
 
 [If the software does make high demand on particular resources, then this should be clearly advertised and explained.]
 
-# Install 
+# Install
 
 [This may be described in a separate INSTALL file, but the README must then clearly state this.]
 
-
-
 # Quick start
 
-[How the first task can be performed with the software, or, in the more extensive  documentation, a link to the quick start. Outlines how to quickly get started with the software using a basic yet practical example]
+[How the first task can be performed with the software, or, in the more extensive documentation, a link to the quick start. Outlines how to quickly get started with the software using a basic yet practical example]
 
-
-
-# Project website 
+# Project website
 
 [Website where the software is described and allows users to obtain it as well as its documentation.]
 
@@ -98,5 +92,3 @@
 **Security & Privacy**
 
 - [ ] Passwords must never be stored in unhashed form
-
-
