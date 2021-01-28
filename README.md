@@ -29,7 +29,7 @@ RegulonDB is undergoing a reengineering process, using open access technologies.
 
 ## License
 
-[MIT](LICENCE)
+**MIT**
 
 ## Support contact information
 

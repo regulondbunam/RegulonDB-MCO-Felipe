@@ -28,7 +28,7 @@ RegulonDB needed a way to connect to the database with free software, so it was 
 
 ## License
 
-[MIT](../LICENCE)
+**MIT**
 
 ## Support contact information
 
