@@ -1,0 +1,54 @@
+{
+  "ontologies": {
+    "validator": {
+      "$jsonSchema": {
+        "type": "object",
+        "required": ["_id", "name"],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^RDB[A-Z]{8}[0-9]{5}$"
+          },
+          "citations": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "contributors": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "iri": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "ontologyCode": {
+            "type": "string"
+          },
+          "versionIri": {
+            "type": "number"
+          },
+          "schemaVersion": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "validationLevel": "strict",
+    "validationAction": "error"
+  }
+}

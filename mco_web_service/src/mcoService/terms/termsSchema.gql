@@ -1,0 +1,36 @@
+type TermDefinition {
+  text: String
+  source: String
+}
+
+type CreatedBy {
+  text: String
+  creationDate: String
+}
+
+type Term {
+  _id: String
+  createdBy: CreatedBy
+  definition: TermDefinition
+  description: String
+  hasDbXRef: [String]
+  hasOboNameSpace: String
+  hasRelatedSynonyms: [String]
+  iri: String
+  name: String
+  oboId: String
+  ontologies_id: String
+  subClassOf: [String]
+  superClassOf: [String]
+  synonyms: [String]
+  schemaVersion: Float
+}
+
+type Query {
+  getAllTerms: [Term]
+  getTermByName(termName: String!): Term
+  getTermByID(termID: String!): Term
+  getTermChildren(termID: String!): [Term]
+  getTermParents(termID: String!): [String]
+  getTermsByText(texto: String!): [Term]
+}

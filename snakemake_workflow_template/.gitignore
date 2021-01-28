@@ -1,0 +1,5 @@
+.snakemake/
+commit.txt
+.idea
+*.pyc
+.vscode/

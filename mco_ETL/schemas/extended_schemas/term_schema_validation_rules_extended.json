@@ -1,0 +1,243 @@
+{
+  "terms": {
+    "validator": {
+      "$jsonSchema": {
+        "type": "object",
+        "required": ["_id", "ontologies_id", "name", "subClassOf", "iri"],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^RDB[A-Z]{8}[0-9]{5}$",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "The identifier has the function of identifying a particular publication in RegulonDB.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "createdBy": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "creationDate": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "annotation": {
+              "Synonyms": "[value]",
+              "Description": "Name of the person who created the record of the term, it may contain the creation date.",
+              "URI": "[value]",
+              "Required": "[value]",
+              "Comments": "This field is made up of two properties: author and creation_date"
+            }
+          },
+          "definition": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "annotation": {
+              "Synonyms": "[value]",
+              "Description": "English language definitions of what means by the concept. These are limited to 1024 characters. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.",
+              "URI": "[value]",
+              "Required": "[value]",
+              "Comments": "This field is made up of two properties: definition_str and definition_src."
+            }
+          },
+          "description": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "Description may be included but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "hasDbXRef": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "Indicates the external DB references related to the term.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "hasOboNameSpace": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "hasRelatedSynonyms": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "annotation": {
+              "Synonyms": "Similar names or identifiers.",
+              "Description": "One or more similar names for the term. The synonyms should include any name a user might use to try to retrieve the term.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "internalComment": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "iri": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "members": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "object"
+            },
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "name": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "oboId": {
+            "type": "string",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "ontologies_id": {
+            "type": "string",
+            "pattern": "^RDB[A-Z]{8}[0-9]{5}$",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "subClassOf": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "superClassOf": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            },
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "[value]",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "synonyms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "annotation": {
+              "Synonyms": "Secondary names or identifiers.",
+              "Description": "One or more secondary names for the term. The synonyms should include any name a user might use to try to retrieve the term.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "[value]",
+              "Comments": "NA"
+            }
+          },
+          "schemaVersion": {
+            "type": "number",
+            "annotation": {
+              "Synonyms": "NA",
+              "Description": "Represents the version of the collection schema.",
+              "URI": "NA",
+              "Required": "[value]",
+              "Example": "1.0",
+              "Comments": "NA"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "validationLevel": "strict",
+    "validationAction": "error"
+  }
+}

@@ -1,0 +1,6 @@
+2021-01-23 12:56:56,068 - LogDebug - INFO - Initialized
+2021-01-23 12:56:56,068 - LogDebug - INFO - Input file name: input_files/mco-edit.owl
+2021-01-23 12:56:56,068 - LogDebug - INFO - Output file name: output_files/terms.json
+2021-01-23 12:56:57,318 - LogDebug - INFO - MCO loaded successfully
+2021-01-23 12:56:58,594 - LogDebug - INFO - Ready 3385 terms readed
+2021-01-23 12:56:58,595 - LogDebug - INFO - Execution time: 2.5288021564483643 seconds

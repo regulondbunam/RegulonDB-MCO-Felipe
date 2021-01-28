@@ -1,13 +1,10 @@
-## [Software name]
+## Microbial Condition Ontology (MCO) Browser
 
-__Contributors__ 
+**Contributors**
 
-[Software name] Version [release version] has been developed by RegulonDB team with contributions from the following.
+Browser para la Microbial Condition Ontology (MCO) Version 1.0 has been developed by RegulonDB team with contributions from the following.
 
-- [Full name]] ([@user]()) [contribution description].
-- [Full name]] ([@user]()) [contribution description].
-- [Full name]] ([@user]()) [contribution description]. (Pull Requests [#x](), [#x]()).
-- [Full name]] ([@user]()) [contribution description]. (Pull Requests [#x](), [#x]()).
-
-
-
+- Felipe Betancourt Figueroa (@programer)
+  - Development of the ETL module for the MCO.
+  - Development of the template for ETL modules.
+  - Development of the web service for MCO Browser.

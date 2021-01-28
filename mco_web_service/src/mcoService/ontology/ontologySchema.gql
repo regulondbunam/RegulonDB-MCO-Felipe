@@ -1,0 +1,29 @@
+type OntologyCollectionData {
+  _id: String
+  citations: String
+  contributors: [String]
+  description: String
+  iri: String
+  name: String
+  note: String
+  ontologyCode: String
+  versionIri: Float
+  schemaVersion: Float
+}
+type Ontology {
+  _id: String
+  citations: String
+  contributors: [String]
+  description: String
+  iri: String
+  name: String
+  note: String
+  ontologyCode: String
+  versionIri: Float
+  schemaVersion: Float
+}
+
+type Query {
+  getOntologies: [Ontology]
+  getOntologyById(ontoCode: String!): Ontology
+}

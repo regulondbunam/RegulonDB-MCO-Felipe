@@ -1,0 +1,109 @@
+{
+  "terms": {
+    "validator": {
+      "$jsonSchema": {
+        "type": "object",
+        "required": ["_id", "ontologies_id", "name", "iri"],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "pattern": "^RDB[A-Z]{8}[0-9]{5}$"
+          },
+          "createdBy": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "creationDate": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "definition": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": {
+            "type": "string"
+          },
+          "hasDbXRef": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "hasOboNameSpace": {
+            "type": "string"
+          },
+          "hasRelatedSynonyms": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "internalComment": {
+            "type": "string"
+          },
+          "iri": {
+            "type": "string"
+          },
+          "members": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "object"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "oboId": {
+            "type": "string"
+          },
+          "ontologies_id": {
+            "type": "string",
+            "pattern": "^RDB[A-Z]{8}[0-9]{5}$"
+          },
+          "subClassOf": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "superClassOf": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "synonyms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "schemaVersion": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "validationLevel": "strict",
+    "validationAction": "error"
+  }
+}

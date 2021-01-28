@@ -1,0 +1,12 @@
+UPDATE: Added the modules for final revision.
+
+Added the next modules:
+- mco_ETL:
+    ETL process made in Snakemake system, this provides a better performance to Extract, Transform and Load the data.
+- mco_web_service:
+    Web service that provides the connection to the RegulonDB data base.
+- snakemake_workflow_template;
+    An ETL workflow template for the RegulonDB ETL process.
+    
+Author: @PhillBet ☕
+

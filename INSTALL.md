@@ -1,35 +1,21 @@
-# [Software name]
-
-
+# Microbial Condition Ontology (MCO) Browser
 
 - ## Installation instructions
 
-[Describe installation instructions of the software.]
+For the integration of the modules it will be necessary to use external programs from RegulonDB
 
-1. Step 1
-Execute:
-
-```shell
-$ command
-```
-2. Step 2
-3. Step x
-
-```shell
-$ command
-```
-
-
-- ### Expected Directory Structure 
-
-[Directory structure after installation. It should be properly organised in sub-directories (for documentation, headers, source, etc.]
-
-
-
+- ### Expected Directory Structure
+  - MCO ETL Diagram
+    ![MCO ETL Diagram](diagrams/mco-etl-directory-structure.png)
+  - Web Service Diagram
+    ![Web Service Diagram](diagrams/web-service-directory-structure.png)
+    - Front End Diagram
+      ![Front End Diagram](diagrams/front-end-directory-structure.png)
 - ### Dependencies
 
-[All required or optional dependencies should be listed, including those by third parties (with references to their websites).]
-
+  - [Owlready2](https://pypi.org/project/Owlready2/)
+  - [Snakemake](https://snakemake.readthedocs.io/en/stable/)
 
 - ### Errors & Tips
-[Describe possible errors that can be occur during the installation software and their solution.]
+
+  - Works best on Linux/Unix systems

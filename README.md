@@ -1,94 +1,83 @@
-# [Browser para la Microbial Condition Ontology (MCO)]
+# Microbial Condition Ontology (MCO) Browser
 
-# Description
+## Description
 
-[High-level description, describing what exactly software does.]
+Process of Extraction, Transformation and Loading of data from the MCO ontology, and Web Service for the visualization of the ontology terms.
 
-# Motivation
+## Motivation
 
-[Why the software does things the way it does and why it was designed in the first place. What problems are solved by it. Links to publications and comparisons to similar software.]
+RegulonDB is undergoing a reengineering process, using open access technologies. Now instead of using Oracle as a database manager, MongoDB will be used, access to the data will be through web services using GraphQL.
 
-# System requirements
+## System requirements
 
-[If the software does make high demand on particular resources, then this should be clearly advertised and explained.]
+- Software:
+  - Python 3.9
+  - Snakemake
+  - Node.js
+  - GraphQL
+- Hardware:
+  - RAM: 6 GB
+  - Storage: 500 MB
 
-# Install
+## Install
 
-[This may be described in a separate INSTALL file, but the README must then clearly state this.]
+[Install guide](INSTALL.md)
 
-# Quick start
+## Project website
 
-[How the first task can be performed with the software, or, in the more extensive documentation, a link to the quick start. Outlines how to quickly get started with the software using a basic yet practical example]
+###### Pending
 
-# Project website
+## License
 
-[Website where the software is described and allows users to obtain it as well as its documentation.]
+[MIT](LICENCE)
 
-# License
+## Support contact information
 
-[Defines the set of rules and conditions for people who want to use the software.]
+[Support contact](http://regulondb.ccg.unam.mx/menu/about_regulondb/contact_us/index.jsp)
 
-# Support contact information
-
-[It should be clear where to go for support, for example a contact e-mail address]
-
-# Software quality checklist
-
-[This may describe the state of the code, providing the necessary guidance on which aspects could be improved]
+## Software quality checklist
 
 **Accessibility**
 
-- [ ] Unique DOI [identifier](http://....) (Please update identifier and link)
-- [ ] Version control system
+- [x] Version control system
 
 **Documentation**
 
-- [ ] README file
-
-**Learnability**
-
-- [ ] Quick start
+- [x] README file
 
 **Buildability**
 
-- [ ] INSTALL file
-
-**Identity**
-
-- [ ] Website
+- [x] INSTALL file
 
 **Copyright & Licensing**
 
-- [ ] LICENSE file
+- [x] LICENSE file
 
 **Portability**
 
-- [ ] Multiple platforms
-- [ ] Browsers
+- [x] Multiple platforms
+- [x] Browsers
 
 **Supportability**
 
-- [ ] E-mail address
-- [ ] Issue tracker
-- [ ] Slack
-- [ ] Gitter
+- [x] E-mail address
+- [x] Issue tracker
 
 **Analysability**
 
-- [ ] Source code structured
-- [ ] Sensible names
-- [ ] Coding standards - [style guides](http://google.github.io/styleguide/)
+- [x] Source code structured
+- [x] Coding standards - [style guides](http://google.github.io/styleguide/)
 
 **Changeability**
 
-- [ ] CONTRIBUTING file
-- [ ] Code of Conduct file
-- [ ] Code changes, and their authorship, publicly visible
+- [x] CONTRIBUTING file
+- [x] Code of Conduct file
+- [x] Code changes, and their authorship, publicly visible
 
 **Reusability**
 
-- [ ] Source code set up in a modular fashion
+- [x] Source code set up in a modular fashion
 
 **Security & Privacy**
 
-- [ ] Passwords must never be stored in unhashed form
+- [x] Passwords must never be stored in unhashed form

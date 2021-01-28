@@ -1,0 +1,19 @@
+channels:
+  # Channels required to download the dependencies
+  - bioconda
+  - conda-forge
+  # If you are using a local api/library set local channel to find it
+'''
+  - local
+'''
+dependencies:
+'''
+  - [library_name]
+'''  
+  # If you are using a local api/library, you must include pip and execute pip to intall it
+'''
+  - pip
+  - pip:
+    - [../../release_modules/apis/your_local_library/]
+'''
+  # Keep in mind that pip will be executed from the Snakemake environment, therefore you will have to indicate that your library is two folders above (../../) and inside the folder "release_modules/apis/" example: 

@@ -1,0 +1,12 @@
+type HT_Collection {
+  _id: String
+  name: String
+  description: String
+  schemaVersion: Float
+}
+
+type Query {
+  getAllHTCollections: [HT_Collection]
+  getHTCollectionByName(HTCollectionName: String!): HT_Collection
+  getHTCollectionByID(HTCollectionID: String!): HT_Collection
+}

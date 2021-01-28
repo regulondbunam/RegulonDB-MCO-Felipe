@@ -1,0 +1,8 @@
+{
+  "url": "mongodb://USER:PASSWORD@SERVER/",
+  "db": "regulondbmultigenomic",
+  "organism": "ECOLI",
+  "version": 1,
+  "source": "EcoCyc",
+  "source_version": 24.5
+}

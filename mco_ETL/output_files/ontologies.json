@@ -1,0 +1,25 @@
+{
+    "classAcronym": "ONTOL",
+    "subClassAcronym": "MCO",
+    "collectionName": "ontologies",
+    "ontologyName": "microbialConditionOntology",
+    "collectionData": [
+        {
+            "_id": "http://purl.obolibrary.org/obo/mco.owl/",
+            "contributors": [
+                "Citlalli Mej\u00eda Almonte",
+                "Julio Collado Vides",
+                "Manuel Camacho",
+                "Socorro Castro Gama",
+                "V\u00edctor H. Tierrafr\u00eda"
+            ],
+            "description": "Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data.",
+            "iri": "http://purl.obolibrary.org/obo/mco.owl/",
+            "name": "RegulonMCO",
+            "note": "__Development Notes__\nMetadata changes:\n-createdBy is no longer obo:createdBy is now x_1.1:contributor for ontology standardization, plus contributors are now separated one by one with their respective label.\n-The description is no longer purl:MCO_0000382 is now x_1.1:description due to metadata compatibility issues.\n-Added obo:IAO_0000116 as editor's notes.\n-Added rdfs:label as ontology name.\n-Added owl: versionInfo as version information.\nDuplicate properties:\n-MCO_0000190 (synonym) = oboI:hasExactSynonym\n-MCO_0000382 (description) = x_1.1:description\n-MCO_0000851 (definition) = obo:IAO_0000115\n-definition = obo:IAO_0000115\nBy Felipe Betancourt F.",
+            "ontologyCode": "mco",
+            "versionIri": 0.1,
+            "schemaVersion": 1.0
+        }
+    ]
+}

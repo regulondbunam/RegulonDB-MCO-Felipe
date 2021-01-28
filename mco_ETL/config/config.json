@@ -1,0 +1,8 @@
+{
+  "url": "mongodb+srv://PhillBet:root@mcocluster.r0mkq.mongodb.net/",
+  "db": "regulondbmultigenomic",
+  "organism": "ECOLI",
+  "version": 1,
+  "source": "EcoCyc",
+  "source_version": 24.5
+}
