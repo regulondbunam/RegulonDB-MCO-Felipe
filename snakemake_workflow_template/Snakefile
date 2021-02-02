@@ -127,3 +127,15 @@ rule re_validate_data:
         "python {params.main_path} -i {params.data} -s {params.schemas} -v {params.valid_data} -iv {params.invalid_data} -l {params.log}"
 
 rule data_uploader:
+    params:
+        main_path = "release_modules/data_uploader/",
+        valid_data = "valid_data/",
+        url = {conf_url},
+        log = "logs/data_uploader_log/"
+    log:
+        "logs/data_uploader_log/data_uploader_log.log"
+    conda:
+        "envs/db_dependencies.yaml"
+    priority: 4
+    shell:
+        "python {params.main_path} -i {params.valid_data} -u {params.url} -mg -l {params.log}"
